@@ -1,0 +1,19 @@
+# AdsSparkX Troubleshooting and Error Resolution
+
+## Common Error Codes
+- **Error 1001 (Invalid API Key):** Ensure your Bearer token is correct and has not expired.
+- **Error 2005 (Pixel Not Found):** The tracking script is not detected on your site. Check for cache plugins or script blockers.
+- **Error 3002 (Budget Sync Failure):** Occurs when the linked platform (e.g., Google Ads) rejects a budget update due to insufficient funds or account suspension on their end.
+
+## Frequently Asked Questions
+- **Why is my data lagging?** Analytics data usually refreshes every 15 minutes. During peak hours, this may extend to 30 minutes.
+- **Can't login?** Ensure you are not using a VPN that is blocking our authentication server. Clear browser cookies and try again.
+
+## Escalation Path
+If you encounter a critical system failure:
+1. Check the Status Page (status.adssparkx.com).
+2. Consult this documentation.
+3. If unresolved, click "Escalate to Human" in the chat interface.
+
+## Enterprise Priority Support
+Enterprise users experiencing "Severity 1" issues (system down) are guaranteed a response within 15 minutes through the dedicated emergency hotline provided in your welcome kit.

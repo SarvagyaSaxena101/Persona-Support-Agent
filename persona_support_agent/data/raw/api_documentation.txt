@@ -1,0 +1,24 @@
+# AdsSparkX API Reference Manual
+
+## Authentication
+All API requests must include a Bearer token in the Authorization header.
+`Authorization: Bearer YOUR_API_KEY`
+
+## API Rate Limits
+To ensure system stability, the following rate limits apply based on your tier:
+
+- **Starter:** 100 requests per minute (RPM).
+- **Professional:** 500 requests per minute (RPM).
+- **Enterprise:** 2,000 requests per minute (RPM) with burst capacity up to 5,000 RPM.
+
+Exceeding these limits will result in a `429 Too Many Requests` error.
+
+## Core Endpoints
+- `GET /v1/campaigns`: List all active ad campaigns.
+- `POST /v1/analytics/query`: Run custom SQL-like queries against your ad performance data.
+- `PATCH /v1/budget/{id}`: Dynamically update the daily spend limit for a specific campaign.
+
+## Enterprise API Features
+- **Webhooks:** Enterprise users can register up to 50 webhook URLs for real-time event notifications (e.g., budget depletion, high CPA alerts).
+- **Batch Processing:** Ability to update up to 1,000 campaigns in a single POST request.
+- **Dedicated API Sandbox:** A separate environment for testing integrations without affecting production data.

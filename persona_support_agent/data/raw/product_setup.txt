@@ -1,0 +1,17 @@
+# AdsSparkX Product Setup and Onboarding
+
+## Initial Configuration Steps
+1. **Account Creation:** Sign up at dashboard.adssparkx.com and verify your email address.
+2. **Platform Linking:** Connect your Google Ads, Meta Ads, or TikTok Ads accounts via the "Integrations" menu.
+3. **Pixel Installation:** Copy the AdsSparkX tracking script and paste it into the <head> section of your website. This is required for conversion tracking.
+4. **Define Conversions:** Set up specific events (e.g., "Purchase", "Lead", "Sign-up") in the Conversion Manager.
+
+## Environment Requirements
+- Modern web browser (Chrome 90+, Firefox 88+, Safari 14+).
+- JavaScript must be enabled for the dashboard to function correctly.
+
+## Enterprise Onboarding
+For Enterprise clients, we provide a "White-Glove Setup" service. This includes:
+- A dedicated implementation engineer to assist with Pixel deployment.
+- Custom tagging strategy sessions.
+- Bulk import of historical data from legacy systems.

@@ -1,0 +1,34 @@
+# AdsSparkX Billing and Subscription Guide
+
+## Subscription Tiers
+AdsSparkX offers three main pricing plans tailored to different business needs:
+
+1. **Starter Plan ($49/month):**
+   - Up to 10 active campaigns.
+   - Basic analytics dashboard.
+   - Email support (24-hour response time).
+   - Single user access.
+
+2. **Professional Plan ($199/month):**
+   - Up to 50 active campaigns.
+   - Advanced AI-driven optimization insights.
+   - Priority email and chat support.
+   - Up to 5 team members.
+   - Custom report exporting.
+
+3. **Enterprise Plan (Custom Pricing):**
+   - Unlimited campaigns.
+   - Dedicated account manager.
+   - 24/7 phone support and SLA guarantees.
+   - Single Sign-On (SSO) integration.
+   - White-labeling options.
+   - Custom data retention policies.
+
+## Cancellation Policy
+Users can cancel their subscription at any time via the "Billing" tab in the dashboard. 
+- Cancellations take effect at the end of the current billing cycle.
+- No partial refunds are provided for mid-month cancellations.
+- Data is retained for 30 days after cancellation before permanent deletion.
+
+## Enterprise Features
+Enterprise customers have access to "Consolidated Billing," allowing multiple sub-accounts to be charged to a single corporate credit card or via wire transfer (Net-30 terms).
