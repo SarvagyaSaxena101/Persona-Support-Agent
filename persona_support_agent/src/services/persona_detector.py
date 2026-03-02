@@ -16,7 +16,7 @@ class PersonaResponse(BaseModel):
     reasoning: str = Field(description="Short explanation of the classification")
 
 class PersonaDetector:
-    def __init__(self, api_key: str, model_name: str = "mistralai/mistral-7b-instruct", threshold: float = 0.7):
+    def __init__(self, api_key: str, model_name: str = "meta-llama/llama-3-8b-instruct", threshold: float = 0.7):
         # OpenRouter uses the OpenAI-compatible ChatOpenAI class
         self.llm = ChatOpenAI(
             api_key=api_key,

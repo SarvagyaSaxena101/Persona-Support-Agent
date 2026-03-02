@@ -6,10 +6,10 @@ from .escalation_handler import EscalationHandler
 from ..utils.analytics_logger import log_persona_event
 
 class SupportOrchestrator:
-    def __init__(self, api_key: str, model_name: str = "mistralai/mistral-7b-instruct"):
-        self.detector = PersonaDetector(api_key=api_key, model_name=model_name)
+    def __init__(self, api_key: str):
+        self.detector = PersonaDetector(api_key=api_key)
         self.vector_store = VectorStore()
-        self.generator = ResponseGenerator(api_key=api_key, model_name=model_name)
+        self.generator = ResponseGenerator(api_key=api_key)
         self.escalator = EscalationHandler()
         
         # --- Conversation Memory ---

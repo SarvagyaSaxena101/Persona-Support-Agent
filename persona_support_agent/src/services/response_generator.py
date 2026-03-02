@@ -15,7 +15,7 @@ class SupportResponse(BaseModel):
     confidence: float = Field(description="Confidence score for the answer provided.")
 
 class ResponseGenerator:
-    def __init__(self, api_key: str, model_name: str = "mistralai/mistral-7b-instruct"):
+    def __init__(self, api_key: str, model_name: str = "meta-llama/llama-3-8b-instruct"):
         self.llm = ChatOpenAI(
             api_key=api_key,
             base_url="https://openrouter.ai/api/v1",

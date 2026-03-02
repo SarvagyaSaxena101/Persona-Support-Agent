@@ -23,17 +23,8 @@ with st.sidebar:
     # 1. API Key Injection
     openrouter_key = st.text_input("OpenRouter API Key", type="password", help="Enter your OpenRouter API key.")
     
-    # 2. Model Selection (Free Models)
-    model_choice = st.selectbox(
-        "Select Model",
-        [
-            "mistralai/mistral-7b-instruct",
-            "google/gemma-2-9b-it",
-            "meta-llama/llama-3-8b-instruct",
-            "microsoft/phi-3-mini-128k-instruct"
-        ],
-        help="Choose a free or low-cost model from OpenRouter."
-    )
+    # Model is now hardcoded to Llama 3 8B Instruct
+    st.info("🤖 Model: Meta Llama 3 8B Instruct")
     
     if not openrouter_key:
         st.warning("⚠️ Please provide an API key to start.")
@@ -77,12 +68,12 @@ with st.sidebar:
 
 # --- Orchestrator Initialization ---
 @st.cache_resource
-def get_orchestrator(api_key, model):
+def get_orchestrator(api_key):
     if api_key:
-        return SupportOrchestrator(api_key=api_key, model_name=model)
+        return SupportOrchestrator(api_key=api_key)
     return None
 
-orchestrator = get_orchestrator(openrouter_key, model_choice)
+orchestrator = get_orchestrator(openrouter_key)
 
 # --- Main Chat UI ---
 st.title("💬 AdsSparkX Customer Support")
